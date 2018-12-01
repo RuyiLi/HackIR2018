@@ -1,0 +1,45 @@
+<style>
+    body {
+        background-color: #181818;
+        font-family: monospace;
+    }
+
+    #preview {
+        transform: rotateY(180deg) scale(0.5, 0.5);
+        position: absolute;
+        border: 10px solid #181818;
+        top: -120px;
+        left: -120px;
+    }
+
+    #game {
+        margin: auto;
+        display: block;
+        background: linear-gradient(120deg, #303030, rgb(70, 70, 70), #303030);
+    }
+
+    button {
+        font-family: monospace;
+        border: 2px solid #ededed;
+        background-color: transparent;
+        width: 200px;
+        height: 40px;
+        color: #ededed;
+        cursor: pointer;
+    }
+
+    p {
+        color: #ededed;
+        font-size: 1.2rem;
+    }
+
+    video { display: none; }
+</style>
+<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+<script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+<script src="main.js"></script>
+<video></video>
+<canvas id="preview"></canvas>
+<canvas id="game"></canvas>
+<button onclick="switchMode(this)">Right-handed mode</button>
+<p>HP: 5/5</p>
