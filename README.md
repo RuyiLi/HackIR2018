@@ -1,4 +1,4 @@
 # HackIR2018
 A game that uses Tensorflow/PoseNet and your webcam to control the character.
 
-Live at http://ruyili.ca/HackIR2018
+Live at https://hackir2018.glitch.me/
